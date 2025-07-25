@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite + TS</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        
+        <script id="config" type="application/json">
+            {
+                "sphere_materials" : [
+                    {
+                        "directory" : "3/",
+                        "color" : "Color.jpg",
+                        "ambient_occlusion" : "AmbientOcclusion.jpg",
+                        "normal" : "NormalGL.jpg",
+                        "displacement" : "Displacement.jpg",
+                        "emissiveMaskContrast" : 50,
+                        "emissiveMaskColorPower" : 10,
+                        "emissiveMaskColorPowerInterpolateFactor" : 1.2
+                    },
+                    {
+                        "directory" : "4/",
+                        "color" : "Color.jpg",
+                        "ambient_occlusion" : "AmbientOcclusion.jpg",
+                        "normal" : "NormalGL.jpg",
+                        "displacement" : "Displacement.jpg",
+                        "emissiveMaskContrast" : 500,
+                        "emissiveMaskColorPower" : 50,
+                        "emissiveMaskColorPowerInterpolateFactor" : 1.2
+                    }
+                ],
+                "music" : [
+                    "t1.mp3",
+                    "t2.mp3",
+                    "t3.mp3"
+                ],
+                "bloom_composer_enabled" : true,
+                "lights" : [
+                    {
+                        "special_color" : "0xff8000",
+                        "main_light_color" : "0xffffff",
+                        "dancer_light_color" : {
+                            "from" : "0xffffff",
+                            "to" : "0xff8000"
+                        }
+                    },
+                    {
+                        "special_color" : "0x00ff00",
+                        "main_light_color" : "0xffffff",
+                        "dancer_light_color" : {
+                            "from" : "0xffffff",
+                            "to" : "0x00ff00"
+                        }
+                    }
+                ]
+            }
+        </script>
+        <!-- <script id="config" type="application/json">
+            {
+                "sphere_materials" : [
+                    {
+                        "directory" : "1/",
+                        "color" : "Color.png",
+                        "ambient_occlusion" : "AmbientOcclusion.png",
+                        "normal" : "NormalGL.png",
+                        "displacement" : "Displacement.png",
+                        "emissiveMaskContrast" : 10,
+                        "emissiveMaskColorPower" : 1.5,
+                        "emissiveMaskColorPowerInterpolateFactor" : 0
+                    },
+                    {
+                        "directory" : "2/",
+                        "color" : "Color.jpg",
+                        "ambient_occlusion" : "AmbientOcclusion.jpg",
+                        "normal" : "NormalGL.jpg",
+                        "displacement" : "Displacement.jpg",
+                        "emissiveMaskContrast" : 10,
+                        "emissiveMaskColorPower" : 2,
+                        "emissiveMaskColorPowerInterpolateFactor" : 0
+                    },
+                    {
+                        "directory" : "3/",
+                        "color" : "Color.jpg",
+                        "ambient_occlusion" : "AmbientOcclusion.jpg",
+                        "normal" : "NormalGL.jpg",
+                        "displacement" : "Displacement.jpg",
+                        "emissiveMaskContrast" : 50,
+                        "emissiveMaskColorPower" : 10,
+                        "emissiveMaskColorPowerInterpolateFactor" : 1.2
+                    },
+                    {
+                        "directory" : "4/",
+                        "color" : "Color.jpg",
+                        "ambient_occlusion" : "AmbientOcclusion.jpg",
+                        "normal" : "NormalGL.jpg",
+                        "displacement" : "Displacement.jpg",
+                        "emissiveMaskContrast" : 500,
+                        "emissiveMaskColorPower" : 50,
+                        "emissiveMaskColorPowerInterpolateFactor" : 1.2
+                    }
+                ],
+                "music" : [
+                    "1.mp3",
+                    "2.mp3",
+                    "3.mp3",
+                    "4.mp3",
+                    "5.mp3",
+                    "6.mp3",
+                    "7.mp3"
+                ],
+                "bloom_composer_enabled" : true,
+                "lights" : [
+                    {
+                        "special_color" : "0xff8000",
+                        "main_light_color" : "0xffffff",
+                        "dancer_light_color" : {
+                            "from" : "0xffffff",
+                            "to" : "0xff8000"
+                        }
+                    },
+                    {
+                        "special_color" : "0x00ff00",
+                        "main_light_color" : "0xffffff",
+                        "dancer_light_color" : {
+                            "from" : "0xffffff",
+                            "to" : "0x00ff00"
+                        }
+                    }
+                ]
+            }
+        </script> -->
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
